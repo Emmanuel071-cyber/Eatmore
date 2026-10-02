@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Manuel EATMORE — delicious Nigerian meals, freshly prepared and delivered to your door."
+    />
+
+    <title>Manuel EATMORE | Nigerian Food Delivered</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Accessibility -->
+    <a href="#main" class="skip-link"> Skip to content </a>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" id="top">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#home" class="logo">
+          <span class="logo-mark">ME</span>
+
+          <span class="logo-text"> Manuel <strong>EATMORE</strong> </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <!-- Navigation Actions -->
+        <div class="nav-actions">
+          <!-- Theme -->
+          <button
+            class="icon-button theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            ☼
+          </button>
+
+          <!-- Cart -->
+          <button
+            class="cart-button"
+            id="cartButton"
+            aria-label="Open shopping cart"
+          >
+            Cart
+
+            <span id="cartCount"> 0 </span>
+          </button>
+
+          <!-- Mobile menu -->
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ================= HERO ================= -->
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <span class="eyebrow"> Nigerian food • Made fresh </span>
+
+            <h1>
+              Good food.
+              <em>Good mood.</em>
+              Delivered.
+            </h1>
+
+            <p>
+              From smoky jollof to comforting soups and delicious grills, order
+              the Nigerian flavours you love and get them delivered while
+              they're still fresh.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#menu" class="btn btn-primary">
+                Explore the menu
+                <span>→</span>
+              </a>
+
+              <a href="#how-it-works" class="text-link">
+                How it works
+                <span>↗</span>
+              </a>
+            </div>
+
+            <!-- Trust indicators -->
+            <div class="trust-row">
+              <div>
+                <strong>30 min</strong>
+                <span>Average delivery</span>
+              </div>
+
+              <div>
+                <strong>4.9/5</strong>
+                <span>Customer rating</span>
+              </div>
+
+              <div>
+                <strong>100%</strong>
+                <span>Freshly made</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Food Visual -->
+          <div class="hero-visual reveal">
+            <div class="hero-blob"></div>
+
+            <div class="food-card floating">
+              <div class="food-image">
+                <span class="decor decor-one"> ✦ </span>
+
+                <span class="decor decor-two"> ✦ </span>
+
+                <div class="food-bowl">
+                  <div class="rice"></div>
+
+                  <div class="chicken"></div>
+
+                  <div class="vegetable"></div>
+                </div>
+              </div>
+               <div><img src="partyjollof.jpg" alt="Party Jollof Bowl"></div>
+              <div class="food-info">
+                <div class="food-title">
+                  <div>
+                    <small> Popular today </small>
+
+                    <h3>Party Jollof Bowl</h3>
+                  </div>
+
+                  <strong> ₦4,500 </strong>
+                </div>
+
+                <div class="rating">
+                  ★★★★★
+                  <span>4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-one">🔥 Fresh from the kitchen</div>
+
+            <div class="floating-chip chip-two">⚡ Fast delivery</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MENU ================= -->
+      <section class="section menu-section" id="menu">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow"> Our menu </span>
+
+              <h2>Cravings, covered.</h2>
+            </div>
+
+            <p>
+              Classic Nigerian comfort food with a clean, modern ordering
+              experience.
+            </p>
+          </div>
+
+          <!-- Menu filters -->
+          <div class="menu-tabs">
+            <button class="menu-tab active" data-filter="all">All</button>
+
+            <button class="menu-tab" data-filter="rice">Rice</button>
+
+            <button class="menu-tab" data-filter="swallow">Swallow</button>
+
+            <button class="menu-tab" data-filter="grill">Grill</button>
+
+            <button class="menu-tab" data-filter="drinks">Drinks</button>
+          </div>
+
+          <!-- Menu cards -->
+          <div class="menu-grid" id="menuGrid">
+            <!-- Jollof -->
+            <article class="menu-card reveal" data-category="rice">
+              <!-- <div class="dish-image jollof">🍗</div> -->
+              <div>
+                <img src="partyjollof.jpg" alt="Party Jollof Bowl" class="dish-image" />
+              </div>
+
+              <div class="dish-content">
+                <span class="food-tag"> Best seller </span>
+
+                <h3>Party Jollof & Chicken</h3>
+
+                <p>
+                  Smoky party jollof, grilled chicken and sweet fried plantain.
+                </p>
+
+                <div class="dish-footer">
+                  <strong> ₦4,500 </strong>
+
+                  <button
+                    class="add-button"
+                    data-name="Party Jollof & Chicken"
+                    data-price="4500"
+                  >
+                    + Add
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Fried rice -->
+            <article class="menu-card reveal" data-category="rice">
+              <!-- <div class="dish-image fried-rice">🍤</div> -->
+              <div>
+                <img src="friedrices.jpg" alt="Fried Rice Supreme" class="dish-image" />
+              </div>
+
+              <div class="dish-content">
+                <span class="food-tag"> Chef's pick </span>
+
+                <h3>Fried Rice Supreme</h3>
+
+                <p>Colourful fried rice with prawns, vegetables and chicken.</p>
+
+                <div class="dish-footer">
+                  <strong> ₦5,200 </strong>
+
+                  <button
+                    class="add-button"
+                    data-name="Fried Rice Supreme"
+                    data-price="5200"
+                  >
+                    + Add
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Egusi -->
+            <article class="menu-card reveal" data-category="swallow">
+              <!-- <div class="dish-image egusi">🍲</div> -->
+              <div>
+                <img src="egusi.jpg" alt="Egusi & Pounded Yam" class="dish-image" />
+              </div>
+
+              <div class="dish-content">
+                <span class="food-tag"> Local favourite </span>
+
+                <h3>Egusi & Pounded Yam</h3>
+
+                <p>Rich egusi soup with soft pounded yam and assorted meat.</p>
+
+                <div class="dish-footer">
+                  <strong> ₦5,800 </strong>
+
+                  <button
+                    class="add-button"
+                    data-name="Egusi & Pounded Yam"
+                    data-price="5800"
+                  >
+                    + Add
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Suya -->
+            <article class="menu-card reveal" data-category="grill">
+              <!-- <div class="dish-image suya">🍢</div> -->
+              <div>
+                <img src="beefsuya.jpg" alt="suya-image" class="dish-image">
+              </div>
+
+              <div class="dish-content">
+                <span class="food-tag"> Spicy </span>
+
+                <h3>Beef Suya Platter</h3>
+
+                <p>Char-grilled suya with onions, pepper and fresh salad.</p>
+
+                <div class="dish-footer">
+                  <strong> ₦4,800 </strong>
+
+                  <button
+                    class="add-button"
+                    data-name="Beef Suya Platter"
+                    data-price="4800"
+                  >
+                    + Add
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Okro -->
+            <article class="menu-card reveal" data-category="swallow">
+              <!-- <div class="dish-image okro">🍲</div> -->
+              <div>
+                <img src="okro.jpg" alt="okro-image" class="dish-image">
+              </div>
+
+              <div class="dish-content">
+                <span class="food-tag"> Comfort food </span>
+
+                <h3>Okro & Garri</h3>
+
+                <p>Fresh okro soup with assorted protein and smooth garri.</p>
+
+                <div class="dish-footer">
+                  <strong> ₦5,000 </strong>
+
+                  <button
+                    class="add-button"
+                    data-name="Okro & Garri"
+                    data-price="5000"
+                  >
+                    + Add
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Zobo -->
+            <article class="menu-card reveal" data-category="drinks">
+              <!-- <div class="dish-image zobo">🥤</div> -->
+               
+              <div class="dish-image">
+                <img src="zobo.jpg" alt="zobo-image" class="dish-image">
+              </div>
+
+              <div class="dish-content">
+                <span class="food-tag"> Refreshing </span>
+
+                <h3>Chilled Zobo</h3>
+
+                <p>House-made hibiscus drink with ginger and pineapple.</p>
+
+                <div class="dish-footer">
+                  <strong> ₦1,500 </strong>
+
+                  <button
+                    class="add-button"
+                    data-name="Chilled Zobo"
+                    data-price="1500"
+                  >
+                    + Add
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FEATURES ================= -->
+      <section class="feature-strip">
+        <div class="container feature-grid">
+          <div class="feature-item">
+            <span>🥘</span>
+            <div>
+              <strong>Cooked fresh</strong>
+              <small>Prepared to order</small>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span>🛵</span>
+            <div>
+              <strong>Quick delivery</strong>
+              <small>Hot to your doorstep</small>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span>🔒</span>
+            <div>
+              <strong>Secure checkout</strong>
+              <small>Safe & simple payments</small>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span>💚</span>
+            <div>
+              <strong>Made with care</strong>
+              <small>Quality ingredients</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= HOW IT WORKS ================= -->
+      <section class="section" id="how-it-works">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow"> Simple by design </span>
+
+            <h2>From click to craving in 3 steps.</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card reveal">
+              <span class="step-number"> 01 </span>
+
+              <div class="step-icon">🔎</div>
+
+              <h3>Choose your meal</h3>
+
+              <p>Browse our menu and pick exactly what you're craving.</p>
+            </article>
+
+            <article class="step-card reveal">
+              <span class="step-number"> 02 </span>
+
+              <div class="step-icon">🛒</div>
+
+              <h3>Place your order</h3>
+
+              <p>
+                Add your favourites to cart and confirm your delivery details.
+              </p>
+            </article>
+
+            <article class="step-card reveal">
+              <span class="step-number"> 03 </span>
+
+              <div class="step-icon">🛵</div>
+
+              <h3>Enjoy your meal</h3>
+
+              <p>Track your order and get fresh food delivered to your door.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="section about-section" id="about">
+        <div class="container about-grid">
+          <div class="about-image reveal">
+            <div class="about-note">
+              Made in Nigeria
+              <strong>with love.</strong>
+            </div>
+
+            <div class="big-food">🍛</div>
+
+            <div class="about-stamp">
+              EAT<br />
+              MORE
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <span class="eyebrow"> Our story </span>
+
+            <h2>Food should feel like home.</h2>
+
+            <p>
+              Manuel EATMORE brings familiar Nigerian flavours into a faster,
+              easier ordering experience. We care about generous portions,
+              honest ingredients and the little details that make a meal
+              memorable.
+            </p>
+
+            <div class="check-list">
+              <div>✓</div>
+              <p>Local ingredients, thoughtfully prepared</p>
+
+              <div>✓</div>
+              <p>Menus inspired by Nigerian favourites</p>
+
+              <div>✓</div>
+              <p>Friendly service from order to doorstep</p>
+            </div>
+
+            <a href="#menu" class="text-link"> Meet your next meal → </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section class="section testimonials">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow"> Loved by foodies </span>
+
+            <h2>What our customers say.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card reveal">
+              <div class="stars">★★★★★</div>
+
+              <blockquote>
+                “The jollof tastes like a proper Saturday party. The delivery
+                was quick and everything arrived warm.”
+              </blockquote>
+
+              <div class="customer">
+                <span> AO </span>
+
+                <div>
+                  <strong> Amara O. </strong>
+
+                  <small> Lagos </small>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card featured reveal">
+              <div class="stars">★★★★★</div>
+
+              <blockquote>
+                “Clean ordering, generous portions and the suya is seriously
+                good. EATMORE is now my office lunch plug.”
+              </blockquote>
+
+              <div class="customer">
+                <span> DK </span>
+
+                <div>
+                  <strong> David K. </strong>
+
+                  <small> Abuja </small>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <div class="stars">★★★★★</div>
+
+              <blockquote>
+                “I love how easy it is to find what I want. The whole experience
+                feels simple and premium.”
+              </blockquote>
+
+              <div class="customer">
+                <span> TA </span>
+
+                <div>
+                  <strong> Tomi A. </strong>
+
+                  <small> Ibadan </small>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section class="section faq-section" id="faq">
+        <div class="container faq-grid">
+          <div>
+            <span class="eyebrow"> Need to know </span>
+
+            <h2>Questions, answered.</h2>
+
+            <p>Everything you need before your next order.</p>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How long does delivery take?
+
+                <span>+</span>
+              </button>
+
+              <div class="faq-answer">
+                Most orders arrive within 25–45 minutes, depending on your
+                location and kitchen traffic.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Can I customise my order?
+
+                <span>+</span>
+              </button>
+
+              <div class="faq-answer">
+                Yes. Add your preferences in the order notes at checkout and our
+                kitchen team will do their best to accommodate them.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What areas do you deliver to?
+
+                <span>+</span>
+              </button>
+
+              <div class="faq-answer">
+                We currently focus on major neighbourhoods in Lagos, with more
+                areas coming soon.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What payment methods do you accept?
+
+                <span>+</span>
+              </button>
+
+              <div class="faq-answer">
+                You can pay securely by card or transfer at checkout.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+      <section class="final-cta">
+        <div class="container cta-container">
+          <div>
+            <span class="eyebrow"> Your next meal is waiting </span>
+
+            <h2>
+              Come hungry.
+              <em>Leave happy.</em>
+            </h2>
+          </div>
+
+          <a href="#menu" class="btn btn-light">
+            Order something delicious
+            <span>→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="logo footer-logo">
+            <span class="logo-mark"> ME </span>
+
+            <span> Manuel <strong>EATMORE</strong> </span>
+          </a>
+
+          <p>Nigerian flavours, made fresh and delivered with care.</p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+
+          <a href="#menu"> Menu </a>
+
+          <a href="#how-it-works"> How it works </a>
+
+          <a href="#about"> Our story </a>
+        </div>
+
+        <div>
+          <h4>Help</h4>
+
+          <a href="#faq"> FAQs </a>
+
+          <a href="mailto:hello@manueleatmore.com"> Contact us </a>
+
+          <a href="#top"> Back to top ↑ </a>
+        </div>
+
+        <div>
+          <h4>Stay in the loop</h4>
+
+          <p>Get new dishes and offers in your inbox.</p>
+
+          <form id="newsletterForm">
+            <label for="email" class="sr-only"> Email address </label>
+
+            <div class="newsletter">
+              <input
+                id="email"
+                type="email"
+                placeholder="Your email"
+                required
+              />
+
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span> © 2026 Manuel EATMORE. All rights reserved. </span>
+
+        <span> Made for Nigerian food lovers. </span>
+      </div>
+    </footer>
+
+    <!-- ================= CART ================= -->
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <span class="eyebrow"> Your order </span>
+
+          <h2>Cart</h2>
+        </div>
+
+        <button class="close-cart" id="closeCart" aria-label="Close cart">
+          ×
+        </button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart">
+          <span> 🛒 </span>
+
+          <p>Your cart is empty.</p>
+
+          <small> Add something delicious from the menu. </small>
+        </div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span> Subtotal </span>
+
+          <strong id="cartTotal"> ₦0 </strong>
+        </div>
+
+        <button class="btn btn-primary checkout-button" id="checkoutButton">
+          Proceed to checkout
+        </button>
+      </div>
+    </aside>
+
+    <!-- Overlay -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script> 
+  </body>
+</html>
+
